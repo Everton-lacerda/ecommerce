@@ -17,9 +17,9 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
 const productsRoute = require('./routes/products')
-const usersRoute = require('./routes/users')
+const ordersRoute = require('./routes/orders')
 
 app.use('/api/products', productsRoute)
-app.use('/api/users', usersRoute)
+app.use('/api/orders', ordersRoute)
 
 module.exports = app
